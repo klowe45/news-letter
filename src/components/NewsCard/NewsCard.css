@@ -10,7 +10,7 @@
 
 .news__card-btn {
   display: flex;
-  position: relative;
+  position: absolute;
 }
 
 .news__card-save {
