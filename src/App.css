@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+.page {
+  max-width: 1440px;
+  min-height: 100vh;
+  background-color: #f5f6f7;
+}
+
+.page__content {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+  .page {
+    width: 320px;
+  }
+
+  .page__content {
+    padding: 0;
+    width: 320px;
+  }
+}

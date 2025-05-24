@@ -1,0 +1,30 @@
+.saved__news-list {
+  margin: 32px 0 32px 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 16px;
+  list-style-type: none;
+  padding-left: 104px;
+}
+
+@media screen and (max-width: 768px) {
+  .saved__news-list {
+    max-width: 768px;
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .saved__news-list {
+    padding: 0;
+    width: 288px;
+    margin-left: 16px;
+  }
+
+  .saved__news-container {
+    width: 280px;
+    margin: 15px 0 15px 0;
+  }
+}

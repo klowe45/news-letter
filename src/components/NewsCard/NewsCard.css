@@ -1,0 +1,343 @@
+.news__card-container {
+  width: 398px;
+  height: 576px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.news__card-btn {
+  display: flex;
+  position: relative;
+}
+
+.news__card-save {
+  height: 40px;
+  width: 40px;
+  left: 179px;
+  top: 19px;
+  border: none;
+  border-radius: 10px;
+  background-image: url(/src/assets/save-icon-nonhover.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+}
+
+.news__card-save:hover {
+  border: none;
+  border-radius: 10px;
+  background-image: url("../../assets//save-icon-hover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0;
+}
+
+.news__card-saved {
+  background-image: url("../../assets/save-icon-saved.png");
+  cursor: pointer;
+}
+
+.news__card_saved-checked {
+  background-image: url("../../assets/save-icon-saved.png");
+}
+
+.news__card-signin {
+  visibility: hidden;
+  border: none;
+  width: 182px;
+  height: 40px;
+  background-color: transparent;
+  position: absolute;
+  top: 24px;
+  right: 70px;
+  cursor: pointer;
+}
+
+.news__card-img {
+  height: 272px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.news__card-img-content {
+  position: relative;
+}
+
+.news__card-text {
+  margin: 0 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.news__card-date {
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 40%;
+  margin-left: 0;
+}
+
+.news__card-title {
+  font-weight: 400;
+  font-size: 26px;
+  text-decoration: none;
+  color: #000000;
+  overflow: hidden;
+  max-height: 60px;
+}
+
+.news__card-title:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.news__card-title-link {
+  text-decoration: none;
+}
+
+.news__card-description {
+  max-height: 110px;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.news__card-source {
+  font-weight: 700;
+  font-size: 16px;
+  opacity: 40%;
+  margin-left: 0;
+}
+
+.news__card-save-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 200px;
+}
+
+.news__card-save-signin {
+  position: absolute;
+  top: 19px;
+  right: -132px;
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+  width: 182px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  z-index: 10;
+  visibility: hidden;
+  color: #000;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.news__card-delete {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 8px;
+  border: none;
+  background-image: url(../../assets/card-delete.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.news__card-delete:hover {
+  background-image: url(../../assets/card-delete-hover.png);
+}
+
+.news__card-delete-wrapper {
+  position: absolute;
+  top: 15px;
+  left: 184px;
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.news__card-delete-confirm {
+  background-color: #fff;
+  border-radius: 10px;
+  border-style: none;
+  color: #000;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 11px;
+  box-shadow: 0px 10px 22px 0px #3b4a741a;
+  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  z-index: 10;
+}
+
+.news__card-delete-wrapper:hover .news__card-delete-confirm {
+  visibility: visible;
+  background-color: #ffffff;
+}
+.news__card-save-wrapper:hover .news__card-save-signin {
+  visibility: visible;
+  background-color: #ffffff;
+}
+
+.news__card-keyword {
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  padding: 8px 22px;
+  margin: 0;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .news__card-container {
+    width: 224px;
+    height: 420px;
+  }
+
+  .news__card-img {
+    height: 150px;
+  }
+
+  .news__card-title {
+    font-size: 22px;
+    margin: 15px auto 15px auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .news__card-description {
+    height: 40px;
+    overflow: hidden;
+    font-size: 16px;
+  }
+
+  .news__card-save {
+    left: 10px;
+  }
+
+  .news__card-save-signin {
+    padding: 0 5px 0 5px;
+    left: -141px;
+    width: 137px;
+  }
+
+  .news__card-delete-wrapper {
+    width: 127px;
+    left: 86px;
+  }
+
+  .news__card-delete-confirm {
+    top: 47px;
+    left: 2px;
+    width: 126px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .news__card-delete-wrapper {
+    top: 15px;
+    left: 147px;
+  }
+
+  .news__card-save-signin {
+    right: -86px;
+    width: 182px;
+  }
+
+  .news__card-container {
+    width: 288px;
+    height: 444px;
+  }
+  .news__card-keyword {
+    top: 15px;
+    left: 15px;
+  }
+  .news__card-img {
+    height: 196px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 20px;
+  }
+
+  .news__card-title {
+    font-size: 22px;
+    margin: 15px auto 15px auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .news__card-description {
+    height: 40px;
+    overflow: hidden;
+  }
+
+  .news__card-source {
+    margin: 16px 0 16px 0;
+  }
+
+  .news__card-save-wrapper {
+    left: 68px;
+    width: 40px;
+    top: 13px;
+    width: 200px;
+  }
+
+  .news__cards-list-items {
+    margin-bottom: 0;
+  }
+
+  .news__card-save-signin {
+    right: -437px;
+  }
+
+  .news__card-delete-confirm {
+    top: 0;
+    left: -43px;
+    width: 126px;
+  }
+
+  .news__card-save {
+    top: 0;
+  }
+
+  .news__card-save-signin {
+    padding: 0 5px 0 5px;
+    left: -86px;
+    top: 0;
+    width: 137px;
+  }
+}
