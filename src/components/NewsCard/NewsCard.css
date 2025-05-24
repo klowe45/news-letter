@@ -166,7 +166,7 @@
 }
 
 .news__card-delete-wrapper {
-  position: absolute;
+  position: relative;
   top: 15px;
   left: 184px;
   width: 200px;
