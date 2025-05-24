@@ -8,8 +8,9 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
-    "homepage": "https://klowe45.github.io/news-letter/"
+    "homepage": "https://klowe45.github.io/news-letter/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "cors": "^2.8.5",
