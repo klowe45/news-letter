@@ -3,12 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://klowe45.github.io/news-letter/",
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "homepage": "https://klowe45.github.io/news-letter/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
