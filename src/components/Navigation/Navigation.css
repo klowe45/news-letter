@@ -19,7 +19,7 @@
   max-height: 128px;
   max-width: 608px;
   color: #ffffff;
-  font-family: roboloSlab, "Times New Roman", Times, serif;
+  font-family: "roboto-slab", "Times New Roman", Times, serif;
   font-weight: 700;
   line-height: 24px;
 }
@@ -41,6 +41,7 @@
   color: #ffffff;
   padding-left: 20px;
   cursor: pointer;
+  font-family: "roboto-slab", "Times New Roman", Times, serif;
 }
 
 .header__navi-signin-btn {
@@ -97,7 +98,7 @@
   display: flex;
   align-items: center;
   color: #ffffff;
-  font-family: roboloSlab, "Times New Roman", Times, serif;
+  font-family: "roboto-slab", "Times New Roman", Times, serif;
   font-weight: 500;
   line-height: 24px;
   padding: 0;
@@ -159,6 +160,7 @@
   .header__navi-title {
     margin: 16px auto 16px 16px;
     color: #ffffff;
+    font-family: "roboto-700", "Times New Roman", Times, serif;
   }
 
   .header__navi-title_black {
