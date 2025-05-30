@@ -40,7 +40,7 @@
   line-height: 24px;
   font-size: 24px;
   margin-bottom: 16px;
-  font-family: robotoSlab, Arial, sans-serif;
+  font-family: "roboto-slab", "Times New Roman", Times, serif;
 }
 
 .news__cards-list_unfound-subtitle {
@@ -49,7 +49,7 @@
   font-size: 18px;
   opacity: 50%;
   margin: 0;
-  font-family: robotoSlab, Arial, sans-serif;
+  font-family: "roboto-slab", "Times New Roman", Times, serif;
 }
 
 .news__cards-list-title {
@@ -59,7 +59,7 @@
   margin: 80px auto 64px 104px;
 }
 
-.news__cards-list_more-btn-signed-in {
+.news__cards-list_more-btn {
   border: none;
   background-color: #ffffff;
   font-size: 18px;
@@ -70,20 +70,6 @@
   height: 64px;
   width: 288px;
   border-radius: 30px;
-}
-
-.news__cards-list_more-btn-signed-out {
-  border: none;
-  background-color: #e8e8e8;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  display: block;
-  margin: auto;
-  height: 64px;
-  width: 288px;
-  border-radius: 30px;
-  margin-bottom: 80px;
 }
 
 .news__cards-list-items {
@@ -110,7 +96,7 @@
     gap: 8px;
   }
 
-  .news__cards-list_more-btn-signed-in {
+  .news__cards-list_more-btn {
     margin: 32px auto 40px auto;
   }
 
@@ -144,7 +130,7 @@
     left: 227px;
   }
 
-  .news__cards-list_more-btn-signed-in {
+  .news__cards-list_more-btn {
     margin: 16px auto 24px auto;
     padding: 0;
     width: 288px;

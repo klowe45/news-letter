@@ -12,7 +12,7 @@
 }
 
 .search__input {
-  font-family: "Roboto-Regular", "sans-serif";
+  font-family: "roboto", "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 22px;
   height: 64px;
@@ -36,7 +36,7 @@
   border-radius: 100px;
   background-color: #2f71e5;
   color: #ffffff;
-  font-family: roboloSlab, "Times New Roman", Times, serif;
+  font-family: "roboto", "Times New Roman", Times, serif;
   font-weight: 500;
   line-height: 24px;
   font-size: 18px;
@@ -53,7 +53,7 @@
   border-radius: 100px;
   background-color: #347eff;
   color: #ffffff;
-  font-family: roboloSlab, "Times New Roman", Times, serif;
+  font-family: "roboto", "Times New Roman", Times, serif;
   font-weight: 500;
   line-height: 24px;
   font-size: 18px;
@@ -70,7 +70,7 @@
   border-radius: 100px;
   background-color: #2a65cc;
   color: #ffffff;
-  font-family: roboloSlab, "Times New Roman", Times, serif;
+  font-family: "roboto", "Times New Roman", Times, serif;
   font-weight: 500;
   line-height: 24px;
   font-size: 18px;
@@ -102,7 +102,7 @@
     border-radius: 100px;
     background-color: #2f71e5;
     color: #ffffff;
-    font-family: roboloSlab, "Times New Roman", Times, serif;
+    font-family: "roboto", "Times New Roman", Times, serif;
     font-weight: 500;
     line-height: 24px;
     font-size: 18px;

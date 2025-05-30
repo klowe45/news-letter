@@ -1,7 +1,12 @@
 import "./MobileDropDown.css";
 import { useNavigate, useLocation } from "react-router-dom";
 
-function MobileDropDown({ handleSigninFromMenu, isLoggedIn, handleSignOut }) {
+function MobileDropDown({
+  handleSigninFromMenu,
+  isLoggedIn,
+  handleSignOut,
+  closeModal,
+}) {
   const navigate = useNavigate();
   const location = useLocation();
   const onSavedPage = location.pathname === "/saved-news";
@@ -20,17 +25,14 @@ function MobileDropDown({ handleSigninFromMenu, isLoggedIn, handleSignOut }) {
 
   return (
     <div className="mobile__drop_down">
-      <button className="mobile__drop_down-home" onClick={homeClick}>
-        Home
+      <button className="mobile__drop_down-home" onClick={handleTogglePage}>
+        {onSavedPage ? "Home" : "Saved News"}
       </button>
 
       {isLoggedIn ? (
         <>
-          <button className="mobile__drop_down-signout" onClick={handleSignOut}>
+          <button className="mobile__drop_down-btn" onClick={handleSignOut}>
             Sign out
-          </button>
-          <button className="mobile__drop_down-btn" onClick={handleTogglePage}>
-            {onSavedPage ? "Home" : "Saved News"}
           </button>
         </>
       ) : (

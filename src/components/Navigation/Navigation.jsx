@@ -11,6 +11,7 @@ function Navigation({
   isLoggedIn,
   isSigninModalOpen,
   handleSignupClick,
+  closeModal,
 }) {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -73,6 +74,7 @@ function Navigation({
             handleSigninFromMenu={handleSigninFromMenu}
             isLoggedIn={isLoggedIn}
             handleSignOut={handleSignOut}
+            closeModal={closeModal}
           />
         </>
       )}
