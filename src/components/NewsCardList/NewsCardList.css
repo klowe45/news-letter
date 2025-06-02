@@ -70,6 +70,7 @@
   height: 64px;
   width: 288px;
   border-radius: 30px;
+  font-family: "roboto", "Times New Roman", Times, serif;
 }
 
 .news__cards-list-items {
