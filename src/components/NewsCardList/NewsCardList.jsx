@@ -24,7 +24,9 @@ function NewsCardList({
     setShowThreeArticles((prevState) => prevState + 3);
   };
 
-  const startingState = filteredNewsData.length === 0 && !isGoodNewsData;
+  const startingState =
+    filteredNewsData.length === 0 && !isGoodNewsData && !isLoading;
+
   const noNewsDataArray = isGoodNewsData && filteredNewsData.length === 0;
 
   return (
@@ -52,14 +54,16 @@ function NewsCardList({
         </div>
       )}
 
-      {isLoading && (
+      {/*{isLoading && (*/}
+      <div className="news__cards-list-preloader-content">
         <div className="news__cards-list-preloader">
           <Preloader />
-          <h3 className="news__cards-list-preloader_text">
+          <h3 className="news__cards-list-preloader-text">
             Searching for news...
           </h3>
         </div>
-      )}
+      </div>
+      {/*})}*/}
 
       {!noNewsDataArray && !isLoading && filteredNewsData.length > 0 && (
         <>
