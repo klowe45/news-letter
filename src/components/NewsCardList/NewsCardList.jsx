@@ -54,16 +54,16 @@ function NewsCardList({
         </div>
       )}
 
-      {/*{isLoading && (*/}
-      <div className="news__cards-list-preloader-content">
-        <div className="news__cards-list-preloader">
-          <Preloader />
-          <h3 className="news__cards-list-preloader-text">
-            Searching for news...
-          </h3>
+      {isLoading && (
+        <div className="news__cards-list-preloader-content">
+          <div className="news__cards-list-preloader">
+            <Preloader />
+            <h3 className="news__cards-list-preloader-text">
+              Searching for news...
+            </h3>
+          </div>
         </div>
-      </div>
-      {/*})}*/}
+      )}
 
       {!noNewsDataArray && !isLoading && filteredNewsData.length > 0 && (
         <>

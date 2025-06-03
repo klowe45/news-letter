@@ -106,6 +106,29 @@
   }
 }
 
+@media screen and (max-width: 410px) {
+  .footer {
+    max-width: 768px;
+  }
+
+  .footer__content {
+    flex-direction: column-reverse;
+  }
+
+  .footer__info {
+    padding: 0;
+    margin-left: 16px;
+  }
+
+  .footer__linkedin-btn {
+    margin-right: 20px;
+  }
+
+  .footer__text-content {
+    margin-left: 16px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .footer {
     flex-direction: column;
