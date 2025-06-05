@@ -41,7 +41,7 @@
   color: #ffffff;
   padding-left: 20px;
   cursor: pointer;
-  font-family: "roboto-slab", "Times New Roman", Times, serif;
+  font-family: "roboto", "Times New Roman", Times, serif;
 }
 
 .header__navi-signin-btn {
@@ -120,10 +120,12 @@
 
 .header__navi-mobile-button {
   display: none;
+  cursor: pointer;
 }
 
 .header__navi-mobile-button-black {
   display: none;
+  cursor: pointer;
 }
 
 .header__navi-link_black.active {

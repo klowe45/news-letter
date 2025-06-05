@@ -5,6 +5,19 @@
   padding: 0;
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f5f6f7;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 .page {
   max-width: 1440px;
   min-height: 100vh;

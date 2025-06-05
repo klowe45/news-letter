@@ -44,11 +44,11 @@ function NewsCardList({
             alt="Not Found Icon"
             className="news__cards-list-unfound-img"
           />
-          <h3 className="news__cards-list_unfound-title">Nothing Found</h3>
-          <p className="news__cards-list_unfound-subtitle">
+          <h3 className="news__cards-list-unfound-title">Nothing Found</h3>
+          <p className="news__cards-list-unfound-subtitle">
             Sorry, but nothing matched
           </p>
-          <div className="news__cards-list_unfound-subtitle">
+          <div className="news__cards-list-unfound-subtitle">
             your search terms.
           </div>
         </div>
@@ -82,7 +82,7 @@ function NewsCardList({
             </ul>
           </div>
           {postedNewsDataItems.length < filteredNewsData.length && (
-            <button onClick={handleClick} className="news__cards-list_more-btn">
+            <button onClick={handleClick} className="news__cards-list-more-btn">
               Show More
             </button>
           )}
