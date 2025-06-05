@@ -25,19 +25,19 @@ function MobileDropDown({
 
   return (
     <div className="mobile__drop_down">
-      <button className="mobile__drop_down-home" onClick={handleTogglePage}>
+      <button className="mobile__drop-down-home" onClick={handleTogglePage}>
         {onSavedPage ? "Home" : "Saved News"}
       </button>
 
       {isLoggedIn ? (
         <>
-          <button className="mobile__drop_down-btn" onClick={handleSignOut}>
+          <button className="mobile__drop-down-btn" onClick={handleSignOut}>
             Sign out
           </button>
         </>
       ) : (
         <button
-          className="mobile__drop_down-btn"
+          className="mobile__drop-down-btn"
           onClick={handleSigninFromMenu}
         >
           Sign In

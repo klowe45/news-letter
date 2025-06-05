@@ -16,7 +16,7 @@ function NavLoggedIn({ handleSignOut, mobileMenuOpen }) {
 
   return (
     <ul className="header__navi-list">
-      <li className="header__navi-list_items">
+      <li className="header__navi-list-items">
         <Link
           to="/"
           className={`header__navi-link ${
@@ -27,7 +27,7 @@ function NavLoggedIn({ handleSignOut, mobileMenuOpen }) {
         </Link>
       </li>
 
-      <li className="header__navi-list_items">
+      <li className="header__navi-list-items">
         <Link
           to="/saved-news"
           className={`header__navi-link ${
@@ -38,7 +38,7 @@ function NavLoggedIn({ handleSignOut, mobileMenuOpen }) {
         </Link>
       </li>
 
-      <li className="header__navi-list_items">
+      <li className="header__navi-list-items">
         <div className="header__navi-signout">
           <button
             onClick={onSignoutClick}

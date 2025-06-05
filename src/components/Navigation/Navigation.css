@@ -24,7 +24,7 @@
   line-height: 24px;
 }
 
-.header__navi-title_black {
+.header__navi-title-black {
   color: #000000;
 }
 
@@ -44,6 +44,12 @@
   font-family: "roboto", "Times New Roman", Times, serif;
 }
 
+.header__navi-loggout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+  transform: scale(1.02);
+}
+
 .header__navi-signin-btn {
   width: 176px;
   height: 48px;
@@ -59,9 +65,20 @@
   justify-content: center;
 }
 
-.header__navi-loggout-btn_black {
+.header__navi-signin-btn:hover {
+  font-weight: 500;
+  transform: scale(1.02);
+}
+
+.header__navi-loggout-btn-black {
   color: #000000;
   border-color: #000000;
+}
+
+.header__navi-loggout-btn-black:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+  transform: scale(1.02);
 }
 
 .header__navi-loggout {
@@ -70,6 +87,12 @@
   height: 24px;
   background-color: transparent;
   margin: 0 12px 0 10px;
+}
+
+.header__navi-loggout:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+  transform: scale(1.02);
 }
 
 .header__navi-signout {
@@ -84,12 +107,12 @@
   height: 66px;
 }
 
-.header__navi-list_items {
+.header__navi-list-items {
   list-style-type: none;
   display: flex;
 }
 
-.header__navi-loggout-btn_img {
+.header__navi-loggout-btn-img {
   padding-right: 10px;
   margin-left: 15px;
 }
@@ -114,8 +137,13 @@
   height: 66px;
 }
 
-.header__navi-link_black {
+.header__navi-link-black {
   color: #000000;
+}
+
+.header__navi-link:hover {
+  font-weight: 500;
+  transform: scale(1.02);
 }
 
 .header__navi-mobile-button {
@@ -123,12 +151,22 @@
   cursor: pointer;
 }
 
+.header__navi-mobile-button:hover {
+  font-weight: 500;
+  transform: scale(1.02);
+}
+
 .header__navi-mobile-button-black {
   display: none;
   cursor: pointer;
 }
 
-.header__navi-link_black.active {
+.header__navi-mobile-button-black:hover {
+  font-weight: 500;
+  transform: scale(1.02);
+}
+
+.header__navi-link-black.active {
   border-bottom: 2px solid #000000;
 }
 
@@ -165,7 +203,7 @@
     font-family: "roboto-700", "Times New Roman", Times, serif;
   }
 
-  .header__navi-title_black {
+  .header__navi-title-black {
     margin: 16px auto 16px 16px;
     color: #000000;
   }
@@ -203,7 +241,7 @@
     border: none;
   }
 
-  .header__navi-mobile-button_x {
+  .header__navi-mobile-button-x {
     display: block;
     margin: 16px 16px 16px 0;
     height: 24px;
@@ -225,7 +263,7 @@
     z-index: 900;
   }
 
-  .header__navi--mobile-open {
+  .header__navi-mobile-open {
     background-color: #1a1b22;
   }
 }

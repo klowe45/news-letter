@@ -94,6 +94,10 @@
   cursor: pointer;
 }
 
+.news__cards-list-more-btn:hover {
+  transform: scale(1.02);
+}
+
 .news__cards-list-items {
   padding: 0;
   display: flex;

@@ -32,12 +32,12 @@ function Navigation({
       <div
         className={`header__navi
     ${isSavedNews ? "header__navi-black" : ""}
-    ${mobileMenuOpen ? "header__navi--mobile-open" : ""}
+    ${mobileMenuOpen ? "header__navi-mobile-open" : ""}
   `}
       >
         <p
           className={`header__navi-title ${
-            isSavedNews && !mobileMenuOpen ? "header__navi-title_black" : ""
+            isSavedNews && !mobileMenuOpen ? "header__navi-title-black" : ""
           }`}
         >
           News Explorer
@@ -47,7 +47,7 @@ function Navigation({
           <button
             className={
               mobileMenuOpen
-                ? "header__navi-mobile-button_x"
+                ? "header__navi-mobile-button-x"
                 : isSavedNews
                 ? "header__navi-mobile-button-black"
                 : "header__navi-mobile-button"

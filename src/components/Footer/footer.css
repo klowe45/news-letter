@@ -37,6 +37,11 @@
   padding: 0 40px 0 0;
 }
 
+.footer__home-btn:hover {
+  font-weight: 500;
+  transform: scale(1.02);
+}
+
 .footer__school-btn {
   margin-right: 40px;
   font-family: "roboto-slab", "Times New Roman", Times, serif;
@@ -46,6 +51,11 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.footer__school-btn:hover {
+  font-weight: 500;
+  transform: scale(1.02);
 }
 
 .footer__github-btn {
@@ -61,6 +71,11 @@
   cursor: pointer;
 }
 
+.footer__github-btn:hover {
+  font-weight: 500;
+  transform: scale(1.02);
+}
+
 .footer__linkedin-btn {
   width: 24px;
   height: 24px;
@@ -73,6 +88,11 @@
   background-position: center;
   background-size: contain;
   cursor: pointer;
+}
+
+.footer__linkedin-btn:hover {
+  font-weight: 500;
+  transform: scale(1.02);
 }
 
 .footer__social-buttons {

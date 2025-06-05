@@ -10,7 +10,7 @@
   width: 320px;
 }
 
-.mobile__drop_down-home {
+.mobile__drop-down-home {
   font-size: 18px;
   font-weight: 500;
   margin: 22px auto 0 16px;
@@ -20,6 +20,11 @@
   text-align: left;
   cursor: pointer;
   font-family: "roboto", "Times New Roman", Times, serif;
+}
+
+.mobile__drop-down-home:hover {
+  font-weight: 500;
+  transform: scale(1.02);
 }
 
 .mobile__drop_down-signout {
@@ -34,7 +39,13 @@
   font-family: "roboto", "Times New Roman", Times, serif;
 }
 
-.mobile__drop_down-btn {
+.mobile__drop_down-signout:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+  transform: scale(1.02);
+}
+
+.mobile__drop-down-btn {
   font-size: 18px;
   line-height: 56px;
   font-weight: 500;
@@ -47,6 +58,11 @@
   width: 288px;
   height: 56px;
   border-radius: 50px;
+}
+
+.mobile__drop-down-btn:hover {
+  font-weight: 500;
+  transform: scale(1.02);
 }
 
 .mobile__drop_down-signout-disabled {
