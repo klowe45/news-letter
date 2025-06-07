@@ -173,8 +173,8 @@
   }
 
   .modal__close {
-    top: -39px;
-    right: 15px;
+    top: -41px;
+    right: 16px;
     width: 24px;
     height: 24px;
     z-index: 10003;
