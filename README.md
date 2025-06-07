@@ -20,4 +20,4 @@ This project is a simple web-based API and frontend built with JavaScript and JS
 
 ### Auther: Kenneth Lowe
 
-## Link to website: 
+## Link to website: https://klowe45.github.io/news-letter/

@@ -11,7 +11,7 @@ function ModalWithForm({
   toggleModal,
   isSubmitDisabled = false,
   children,
-  hiddenSubmitButton = false, // Fixed default value
+  hiddenSubmitButton = false,
 }) {
   return (
     <div className={`modal ${isOpen ? "modal_opened" : ""}`}>

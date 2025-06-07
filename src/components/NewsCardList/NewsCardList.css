@@ -21,8 +21,25 @@
   margin-bottom: 32px;
 }
 
-.news__cards-list_unfounded-hidden {
+.news__cards-list-unfounded-hidden {
   display: none;
+}
+
+.news__cards-list-preloader-content {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  opacity: 50%;
+}
+
+.news__cards-list-preloader {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
 }
 
 .news__cards-list-preloader-hidden {
@@ -33,23 +50,26 @@
   font-weight: 400;
   line-height: 30px;
   font-size: 26px;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
 }
 
-.news__cards-list_unfound-title {
+.news__cards-list-unfound-title {
   font-weight: 400;
   line-height: 24px;
   font-size: 24px;
   margin-bottom: 16px;
-  font-family: robotoSlab, Arial, sans-serif;
+  font-family: "roboto-slab", "Times New Roman", Times, serif;
 }
 
-.news__cards-list_unfound-subtitle {
+.news__cards-list-unfound-subtitle {
   font-weight: 400;
   line-height: 24px;
   font-size: 18px;
   opacity: 50%;
   margin: 0;
-  font-family: robotoSlab, Arial, sans-serif;
+  font-family: "roboto-slab", "Times New Roman", Times, serif;
 }
 
 .news__cards-list-title {
@@ -59,7 +79,7 @@
   margin: 80px auto 64px 104px;
 }
 
-.news__cards-list_more-btn-signed-in {
+.news__cards-list-more-btn {
   border: none;
   background-color: #ffffff;
   font-size: 18px;
@@ -70,20 +90,12 @@
   height: 64px;
   width: 288px;
   border-radius: 30px;
+  font-family: "roboto", "Times New Roman", Times, serif;
+  cursor: pointer;
 }
 
-.news__cards-list_more-btn-signed-out {
-  border: none;
-  background-color: #e8e8e8;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  display: block;
-  margin: auto;
-  height: 64px;
-  width: 288px;
-  border-radius: 30px;
-  margin-bottom: 80px;
+.news__cards-list-more-btn:hover {
+  transform: scale(1.02);
 }
 
 .news__cards-list-items {
@@ -110,12 +122,17 @@
     gap: 8px;
   }
 
-  .news__cards-list_more-btn-signed-in {
+  .news__cards-list-more-btn {
     margin: 32px auto 40px auto;
   }
 
   .news__cards-list-unfound {
     margin: 40px 0 40px 0;
+  }
+
+  .news__cards-list-preloader-content {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 
@@ -144,9 +161,14 @@
     left: 227px;
   }
 
-  .news__cards-list_more-btn-signed-in {
+  .news__cards-list-more-btn {
     margin: 16px auto 24px auto;
     padding: 0;
     width: 288px;
+  }
+
+  .news__cards-list-preloader-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }

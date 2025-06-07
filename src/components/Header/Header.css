@@ -1,10 +1,5 @@
-@font-face {
-  font-family: "roboloSlab";
-  src: url(../../../vendor/fonts/inter-400-regular.woff);
-}
-
 .header {
-  background-image: url(../../assets/headerBackImg.jpeg);
+  background-image: url(../../assets/headerBackImg-min.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -26,7 +21,7 @@
   font-size: 60px;
   font-weight: 400;
   line-height: 64px;
-  font-family: "roboloSlab", "Times New Roman", Times, serif;
+  font-family: "roboto-slab", "Times New Roman", Times, serif;
 }
 
 .header__content-description {
@@ -35,7 +30,7 @@
   font-weight: 400;
   line-height: 24px;
   font-size: 18px;
-  font-family: "roboloSlab", "Times New Roman", Times, serif;
+  font-family: "roboto-slab", "Times New Roman", Times, serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -47,7 +42,6 @@
 @media screen and (max-width: 320px) {
   .header {
     margin: 0;
-    height: 536px;
   }
 
   .header__title {
@@ -69,7 +63,7 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 40px;
-    font-family: "roboloSlab", "Times New Roman", Times, serif;
+    font-family: "roboto-slab", "Times New Roman", Times, serif;
   }
 
   .header__content-description {
@@ -78,6 +72,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    font-family: "roboloSlab", "Times New Roman", Times, serif;
+    font-family: "roboto-slab", "Times New Roman", Times, serif;
   }
 }

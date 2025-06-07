@@ -12,6 +12,7 @@ function Header({
   uponSearch,
   isSigninModalOpen,
   handleSignupClick,
+  closeModal,
 }) {
   return (
     <header className="header">
@@ -22,6 +23,7 @@ function Header({
           isLoggedIn={isLoggedIn}
           isSigninModalOpen={isSigninModalOpen}
           handleSignupClick={handleSignupClick}
+          closeModal={closeModal}
         />
       </div>
       <div className="header__content">

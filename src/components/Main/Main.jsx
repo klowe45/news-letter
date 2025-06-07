@@ -31,16 +31,18 @@ function Main({
         handleSignupClick={handleSignupClick}
       />
       <main className="main">
-        <NewsCardList
-          isGoodNewsData={isGoodNewsData}
-          isLoading={isLoading}
-          isLoggedIn={isLoggedIn}
-          handleSaveArticle={handleSaveArticle}
-          handleDeleteArticle={handleDeleteArticle}
-          setActiveModal={setActiveModal}
-          newsData={newsData}
-          savedArticles={savedArticles}
-        />
+        <section className="news">
+          <NewsCardList
+            isGoodNewsData={isGoodNewsData}
+            isLoading={isLoading}
+            isLoggedIn={isLoggedIn}
+            handleSaveArticle={handleSaveArticle}
+            handleDeleteArticle={handleDeleteArticle}
+            setActiveModal={setActiveModal}
+            newsData={newsData}
+            savedArticles={savedArticles}
+          />
+        </section>
         <About />
       </main>
     </>
