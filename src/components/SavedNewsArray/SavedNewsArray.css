@@ -19,12 +19,13 @@
 @media screen and (max-width: 320px) {
   .saved__news-list {
     padding: 0;
-    width: 288px;
+    max-width: 288px;
     margin-left: 16px;
+    margin: 24px 16px 12px 16px;
   }
 
   .saved__news-container {
-    width: 280px;
+    max-width: 320px;
     margin: 15px 0 15px 0;
   }
 }

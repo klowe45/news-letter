@@ -20,8 +20,7 @@ import { API_KEY, getNews } from "./components/utils/newsApi.js";
 import { getLastWeeksDate, getTodaysDate } from "./components/utils/Dates.js";
 import SavedNews from "./components/SavedNews/SavedNews.jsx";
 import { UserArticleContext } from "./context/UserArticleContext.js";
-import MobileDropDown from "./components/mobileDropDown/mobileDropDown.jsx";
-//for review
+
 function App() {
   /***************************************************************************
    *                                  Modal                                  *

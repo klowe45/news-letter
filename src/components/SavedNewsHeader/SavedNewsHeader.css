@@ -24,7 +24,7 @@
 }
 
 .header__saved-keywords {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "roboto-slab", "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -32,7 +32,7 @@
 }
 
 .header__saved-span {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "roboto-slab", "Times New Roman", Times, serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;

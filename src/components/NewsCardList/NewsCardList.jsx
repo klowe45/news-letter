@@ -24,7 +24,9 @@ function NewsCardList({
     setShowThreeArticles((prevState) => prevState + 3);
   };
 
-  const startingState = filteredNewsData.length === 0 && !isGoodNewsData;
+  const startingState =
+    filteredNewsData.length === 0 && !isGoodNewsData && !isLoading;
+
   const noNewsDataArray = isGoodNewsData && filteredNewsData.length === 0;
 
   return (
@@ -42,22 +44,24 @@ function NewsCardList({
             alt="Not Found Icon"
             className="news__cards-list-unfound-img"
           />
-          <h3 className="news__cards-list_unfound-title">Nothing Found</h3>
-          <p className="news__cards-list_unfound-subtitle">
+          <h3 className="news__cards-list-unfound-title">Nothing Found</h3>
+          <p className="news__cards-list-unfound-subtitle">
             Sorry, but nothing matched
           </p>
-          <div className="news__cards-list_unfound-subtitle">
+          <div className="news__cards-list-unfound-subtitle">
             your search terms.
           </div>
         </div>
       )}
 
       {isLoading && (
-        <div className="news__cards-list-preloader">
-          <Preloader />
-          <h3 className="news__cards-list-preloader_text">
-            Searching for news...
-          </h3>
+        <div className="news__cards-list-preloader-content">
+          <div className="news__cards-list-preloader">
+            <Preloader />
+            <h3 className="news__cards-list-preloader-text">
+              Searching for news...
+            </h3>
+          </div>
         </div>
       )}
 
@@ -78,14 +82,7 @@ function NewsCardList({
             </ul>
           </div>
           {postedNewsDataItems.length < filteredNewsData.length && (
-            <button
-              onClick={handleClick}
-              className={
-                isLoggedIn
-                  ? "news__cards-list_more-btn-signed-in"
-                  : "news__cards-list_more-btn-signed-out"
-              }
-            >
+            <button onClick={handleClick} className="news__cards-list-more-btn">
               Show More
             </button>
           )}

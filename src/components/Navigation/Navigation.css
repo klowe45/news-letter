@@ -81,6 +81,7 @@
   padding: 0;
   margin: 0;
   height: 66px;
+  list-style: none;
 }
 
 .header__navi-list_items {
@@ -145,18 +146,21 @@
 
 @media screen and (max-width: 320px) {
   .header__navi {
-    display: flex;
-    z-index: 1000;
     position: relative;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 56px;
   }
 
   .header__navi-black {
     background-color: #ffffff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    position: relative;
   }
 
   .header__navi-title {
+    position: relative;
+    z-index: 10002;
     margin: 16px auto 16px 16px;
     color: #ffffff;
   }
@@ -185,6 +189,8 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
+    position: relative;
+    z-index: 999;
   }
 
   .header__navi-mobile-button-black {
@@ -223,5 +229,7 @@
 
   .header__navi--mobile-open {
     background-color: #1a1b22;
+    position: relative;
+    z-index: 10001;
   }
 }
