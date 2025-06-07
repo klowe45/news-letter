@@ -59,6 +59,11 @@
   cursor: pointer;
 }
 
+.modal__close:hover {
+  font-weight: 500;
+  transform: scale(1.02);
+}
+
 .modal__label {
   color: #2f71e5;
   width: 100%;
@@ -163,11 +168,30 @@
 }
 
 @media screen and (max-width: 320px) {
+  .modal {
+    z-index: 10001;
+  }
+
+  .modal__close {
+    top: -39px;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+    z-index: 10003;
+  }
+
+  .modal__close-mobile:hover {
+    font-weight: 500;
+    transform: scale(1.02);
+  }
+
   .modal__content {
     width: 320px;
     max-height: 407px;
     position: relative;
-    margin: 66px auto auto auto;
+    margin: 0 auto auto auto;
+    margin-top: 56px;
+    z-index: 10000;
   }
 
   .modal__form {
@@ -190,13 +214,5 @@
 
   .modal__button-submit {
     width: 288px;
-  }
-
-  .modal__close {
-    top: -45px;
-    right: 15px;
-    width: 24px;
-    height: 24px;
-    z-index: 1000;
   }
 }

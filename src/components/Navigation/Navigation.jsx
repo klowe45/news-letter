@@ -11,7 +11,6 @@ function Navigation({
   isLoggedIn,
   isSigninModalOpen,
   handleSignupClick,
-  closeModal,
 }) {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -32,12 +31,12 @@ function Navigation({
       <div
         className={`header__navi
     ${isSavedNews ? "header__navi-black" : ""}
-    ${mobileMenuOpen ? "header__navi-mobile-open" : ""}
+    ${mobileMenuOpen ? "header__navi--mobile-open" : ""}
   `}
       >
         <p
           className={`header__navi-title ${
-            isSavedNews && !mobileMenuOpen ? "header__navi-title-black" : ""
+            isSavedNews && !mobileMenuOpen ? "header__navi-title_black" : ""
           }`}
         >
           News Explorer
@@ -47,7 +46,7 @@ function Navigation({
           <button
             className={
               mobileMenuOpen
-                ? "header__navi-mobile-button-x"
+                ? "header__navi-mobile-button_x"
                 : isSavedNews
                 ? "header__navi-mobile-button-black"
                 : "header__navi-mobile-button"
@@ -74,7 +73,6 @@ function Navigation({
             handleSigninFromMenu={handleSigninFromMenu}
             isLoggedIn={isLoggedIn}
             handleSignOut={handleSignOut}
-            closeModal={closeModal}
           />
         </>
       )}
