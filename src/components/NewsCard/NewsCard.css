@@ -20,7 +20,7 @@
   top: 19px;
   border: none;
   border-radius: 10px;
-  background-image: url(/src/assets/save-icon-nonhover.png);
+  background-image: url(/src/assets/imgs_svg/save-icon-nonhover.svg);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -31,7 +31,7 @@
 .news__card-save:hover {
   border: none;
   border-radius: 10px;
-  background-image: url("../../assets//save-icon-hover.png");
+  background-image: url("../../assets/imgs_svg/save-icon-hover.svg");
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -39,12 +39,12 @@
 }
 
 .news__card-saved {
-  background-image: url("../../assets/save-icon-saved.png");
+  background-image: url("../../assets/imgs_svg/save-icon-saved.svg");
   cursor: pointer;
 }
 
 .news__card_saved-checked {
-  background-image: url("../../assets/save-icon-saved.png");
+  background-image: url("../../assets/imgs_svg/save-icon-saved.svg");
 }
 
 .news__card-signin {
@@ -167,7 +167,7 @@
   position: relative;
   border-radius: 8px;
   border: none;
-  background-image: url(../../assets/card-delete.png);
+  background-image: url(../../assets/imgs_svg/deleteCard.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -175,7 +175,7 @@
 }
 
 .news__card-delete:hover {
-  background-image: url(../../assets/card-delete-hover.png);
+  background-image: url(../../assets/imgs_svg/deleteCardHover.svg);
 }
 
 .news__card-delete-wrapper {

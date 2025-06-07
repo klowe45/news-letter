@@ -1,8 +1,8 @@
 import "./NewsCardList.css";
 import NewsCard from "../NewsCard/NewsCard";
 import { useState } from "react";
-import Preloader from "../Preloader/Preloader";
-import notFound from "../../assets/notFound.png";
+import Preloader from "../../assets/imgs_svg/loading.svg";
+import notFound from "../../assets/imgs_svg/not-found.svg";
 
 function NewsCardList({
   isLoading,

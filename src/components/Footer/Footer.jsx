@@ -39,7 +39,7 @@ function Footer({
               onClick={handleGithubClick}
             ></button>
             <button
-              className="footer__linkedin-btn"
+              className="footer__facebook-btn"
               onClick={handleFacebookClick}
             ></button>
           </div>
